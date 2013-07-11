@@ -1,6 +1,13 @@
-a, p, nav li {
-	font-size: 14px;
+a, p, li {
 	font-family: 'OpenSansRegular','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+a, p {
+	font-size: 16px;
+}
+
+li, li a {
+	font-size: 14px;
 }
 
 a {
@@ -204,6 +211,11 @@ nav li, footer li {
 	color: rgb(255,255,255);
 }
 
+#details p a {
+	color: rgb(163,207,255);
+	text-decoration: underline;
+}
+
 #details h2 {
 	clear: both;
 	padding: 9px 0;
@@ -241,7 +253,6 @@ nav li, footer li {
 	color: rgb(235,235,235);
 	text-shadow: 0 -1px rgba(0,0,0,.35);
 	line-height: 31px;
-	font-size: 16px;
 	margin-bottom: 5px;
 }
 
