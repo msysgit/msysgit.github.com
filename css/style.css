@@ -281,6 +281,10 @@ nav li, footer li {
 	width: 35%;
 }
 
+.imgresize {
+	width: 100%;
+}
+
 .stud {
 	clear:both;
 }
