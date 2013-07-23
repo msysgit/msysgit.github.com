@@ -1,0 +1,39 @@
+@media only screen
+and (max-width: 1075px) {
+	.content {
+		width: 95%;
+	}
+	
+	nav {
+		padding: 0;
+	}
+	
+	#details article {
+		padding-bottom: 15px;
+	}
+}
+
+@media only screen
+and (max-width: 700px) {
+	#imagerollover {
+		float: none;
+		margin: 0 auto;
+	}
+	
+	#feature article {
+		margin-left: 0;
+		height: auto;
+	}
+	
+	#details .content  {
+		height: auto;
+	}
+	
+	.smallscreenfullwidth {
+		width: 100%;
+	}
+	
+	.smallscreeninvisible {
+		display: none;
+	}
+}

@@ -45,7 +45,7 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
-	min-width: 700px;
+	min-width: 480px;
 	max-width: 900px;
 }
 
@@ -59,7 +59,6 @@ header {
 	background-image: url('../img/header_bg.png'), -ms-radial-gradient(center center, ellipse cover, rgba(235,235,235,.7) 0%, rgba(200,200,200,.3) 50%, rgba(30,30,30,.25) 100%);
 	background-image: url('../img/header_bg.png'), -o-radial-gradient(center center, ellipse cover, rgba(235,235,235,.7) 0%, rgba(200,200,200,.3) 50%, rgba(30,30,30,.25) 100%);
 	background-repeat: repeat;
-	height: 485px;
 	padding-top: .6em;
 }
 
@@ -116,6 +115,10 @@ nav li, footer li {
 	text-transform: uppercase;
 	float: left;
 	margin-left: 25px;
+}
+
+#feature {
+	padding-bottom: 45px;
 }
 
 #feature article {
@@ -276,10 +279,6 @@ nav li, footer li {
 .detailsimg {
 	float: left;
 	width: 35%;
-}
-
-#contributecontent .detailsimg * {
-	width: 100%;
 }
 
 .stud {
