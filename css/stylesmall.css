@@ -29,6 +29,11 @@ and (max-width: 700px) {
 		height: auto;
 	}
 	
+	.content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
 	.smallscreenfullwidth {
 		width: 100%;
 	}
