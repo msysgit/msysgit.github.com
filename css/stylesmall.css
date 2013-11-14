@@ -9,7 +9,7 @@ and (max-width: 1075px) {
 	}
 	
 	#details article {
-		padding-bottom: 15px;
+		padding-bottom: 1.5rem;
 	}
 }
 
@@ -30,8 +30,8 @@ and (max-width: 700px) {
 	}
 	
 	.content {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 	
 	.smallscreenfullwidth {

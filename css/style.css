@@ -1,10 +1,14 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
 	font-family: 'OpenSansRegular','Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 li, li a {
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 a {
@@ -22,31 +26,31 @@ a {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 5.0rem;
 }
 
 h1 span {
-	margin-left: 10px;
-	font-size: 21px;
+	margin-left: 1.0rem;
+	font-size: 2.1rem;
 	color: rgb(150,150,150);
 }
 
 h2 {
 	font-family: 'CapsuulaRegular';
-	font-size: 55px;
+	font-size: 5.5rem;
 }
 
 h3 {
 	font-family: 'CapsuulaRegular';
-	font-size: 36px;
+	font-size: 3.6rem;
 }
 
 .content {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
-	min-width: 480px;
-	max-width: 900px;
+	min-width: 48.0rem;
+	max-width: 90.0rem;
 }
 
 header, footer {
@@ -59,29 +63,29 @@ header {
 	background-image: url('../img/header_bg.png'), -ms-radial-gradient(center center, ellipse cover, rgba(235,235,235,.7) 0%, rgba(200,200,200,.3) 50%, rgba(30,30,30,.25) 100%);
 	background-image: url('../img/header_bg.png'), -o-radial-gradient(center center, ellipse cover, rgba(235,235,235,.7) 0%, rgba(200,200,200,.3) 50%, rgba(30,30,30,.25) 100%);
 	background-repeat: repeat;
-	padding-top: .6em;
+	padding-top: .6rem;
 }
 
 header h1 {
-	margin-top: 9px;
+	margin-top: .9rem;
 }
 
 footer {
-	border-top: solid 1px rgb(240,240,240);
-	 background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(225,225,225)), to(rgb(255,255,255))); 
-	 background: -webkit-linear-gradient(top, rgb(200,200,200), rgb(255,255,255)); 
-	 background: -moz-linear-gradient(top, rgb(200,200,200), rgb(255,255,255)); 
-	 background: -ms-linear-gradient(top, rgb(200,200,200), rgb(255,255,255));  
-	 background: -o-linear-gradient(top, rgb(200,200,200), rgb(255,255,255)); 
+	border-top: solid .1rem rgb(240,240,240);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(225,225,225)), to(rgb(255,255,255))); 
+	background: -webkit-linear-gradient(top, rgb(200,200,200), rgb(255,255,255)); 
+	background: -moz-linear-gradient(top, rgb(200,200,200), rgb(255,255,255)); 
+	background: -ms-linear-gradient(top, rgb(200,200,200), rgb(255,255,255));  
+	background: -o-linear-gradient(top, rgb(200,200,200), rgb(255,255,255)); 
 }
 
 footer div {
-	padding-top: 15px;
+	padding-top: 1.5rem;
 }
 
 footer h1 {
-	margin-top: -6px;
-	font-size: 22px;
+	margin-top: -.6rem;
+	font-size: 2.2rem;
 }
 
 footer .gittext {
@@ -89,14 +93,14 @@ footer .gittext {
 }
 
 footer ul {
-	padding-top: 7px;
+	padding-top: .7rem;
 }
 
 nav {
 	margin-bottom: 2em;
 	padding: 0 1.3em;
-	height: 70px;
-	border-bottom: solid 1px rgb(200,200,200);
+	height: 7.0rem;
+	border-bottom: solid .1rem rgb(200,200,200);
 }
 
 nav  h1 {
@@ -108,57 +112,57 @@ nav ul, footer a {
 }
 
 nav ul {
-	margin-top: 38px;
+	margin-top: 3.8rem;
 }
 
 nav li, footer li {
 	text-transform: uppercase;
 	float: left;
-	margin-left: 25px;
+	margin-left: 2.5rem;
 }
 
 #feature {
-	padding-bottom: 45px;
+	padding-bottom: 4.5rem;
 }
 
 #feature article {
 	position: relative;
-	margin-left: 355px;
-	height: 325px;
+	margin-left: 35.5rem;
+	height: 32.5rem;
 }
 
 #feature h2 {
-	padding: 5px 15px;
-	line-height: 65px;
-	margin-bottom: 15px;
+	padding: .5rem 1.5rem;
+	line-height: 6.5rem;
+	margin-bottom: 1.5rem;
 	color: rgb(130,130,130);
-	border-bottom: solid 1px rgb(190,190,190);
+	border-bottom: solid .1rem rgb(190,190,190);
 }
 
 .button {
 	display: inline-block;
-	font-size: 21px;
-	padding: 10px 3%;
+	font-size: 2.1rem;
+	padding: 1.0rem 3%;
 	color: white;
 	text-align: center;
-	text-shadow: 0 -1px 0 rgba(0,0,0,.4);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 1px solid rgb(10, 58, 125);
+	text-shadow: 0 -.1rem 0 rgba(0,0,0,.4);
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	border-radius: .5rem;
+	border: .1rem solid rgb(10, 58, 125);
 	background: rgb(44,102,184);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(75,140,233)), color-stop(1, rgb(44,102,184)));
 	background: -moz-linear-gradient(center top, rgb(75,140,233) 0%, rgb(44,102,184) 100%);
-	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.2), inset 0 0 2px hsla(0,100%,100%,.2), 0 1px 2px hsla(0, 0%, 0%, .29);
-	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.2), inset 0 0 2px hsla(0,100%,100%,.2), 0 1px 2px hsla(0, 0%, 0%, .29);
-	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.2), inset 0 0 2px hsla(0,100%,100%,.2), 0 1px 2px hsla(0, 0%, 0%, .29);
+	-webkit-box-shadow: inset 0 .1rem 0 hsla(0,100%,100%,.2), inset 0 0 .2rem hsla(0,100%,100%,.2), 0 .1rem .2rem hsla(0, 0%, 0%, .29);
+	-moz-box-shadow: inset 0 .1rem 0 hsla(0,100%,100%,.2), inset 0 0 .2rem hsla(0,100%,100%,.2), 0 .1rem .2rem hsla(0, 0%, 0%, .29);
+	box-shadow: inset 0 .1rem 0 hsla(0,100%,100%,.2), inset 0 0 .2rem hsla(0,100%,100%,.2), 0 .1rem .2rem hsla(0, 0%, 0%, .29);
 }
 
 .featurebutton {
 	width: 40%;
 	margin-left: 1%;
 	margin-right: 1%;
-	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
 }
 
 #portablelink {
@@ -171,13 +175,13 @@ nav li, footer li {
 #imagerollover {
 	float: left;
 	position: relative;
-	height: 325px;
-	width: 325px;
+	height: 32.5rem;
+	width: 32.5rem;
 }
 
 #imagerollover img {
-	width: 325px;
-	height: 325px;
+	width: 32.5rem;
+	height: 32.5rem;
 	position: absolute;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
@@ -203,7 +207,7 @@ nav li, footer li {
 }
 
 .vcentercontainer img {
-	margin: 45px auto;
+	margin: 4.5rem auto;
 }
 
 #details {
@@ -211,8 +215,8 @@ nav li, footer li {
 }
 
 #details article {
-	border-top: solid 5px rgba(0,0,0,.17);
-	border-bottom: solid 5px rgba(0,0,0,.22);
+	border-top: solid .5rem rgba(0,0,0,.17);
+	border-bottom: solid .5rem rgba(0,0,0,.22);
 }
 
 #details .gittext {
@@ -226,42 +230,37 @@ nav li, footer li {
 
 #details h2 {
 	clear: both;
-	padding: 9px 0;
-	border-bottom: solid 5px rgba(255,255,255,.22);
-	border-top: solid 5px rgba(255,255,255,.22);
-	box-shadow: 0 0 40px rgba(0,0,0,.4);
+	padding: .9rem 0;
+	border-bottom: solid .5rem rgba(255,255,255,.22);
+	border-top: solid .5rem rgba(255,255,255,.22);
+	box-shadow: 0 0 4.0rem rgba(0,0,0,.4);
 	background-color: rgba(255,255,255,.14);
 	color: rgb(255,255,255);
 	text-align: center;
-	text-shadow: 0 -1px rgba(0,0,0,.5);
-	margin-top: 45px;
-	margin-bottom: 30px;
+	text-shadow: 0 -.1rem rgba(0,0,0,.5);
+	margin: 4.5rem 0;
 }
 
 #details h3 {
 	color: rgb(245,245,245);
-	text-shadow: 0 -1px rgba(0,0,0,.35);
-	margin-top: 25px;
+	text-shadow: 0 -.1rem rgba(0,0,0,.35);
+	margin-top: 2.5rem;
 }
 
 #details .button {
-	border: 1px solid rgb(70, 70, 70);
+	border: .1rem solid rgb(70, 70, 70);
 	background: rgb(184,184,184);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(224,224,224)), color-stop(1, rgb(163,163,163)));
 	background: -moz-linear-gradient(center top, rgb(224,224,224) 0%, rgb(163,163,163) 100%);
-	text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+	text-shadow: 0 -.1rem 0 rgba(0,0,0,.6);
 	margin-right: 1%;
-}
-
-#details .content {
-	height: 625px;
 }
 
 #details p {
 	color: rgb(235,235,235);
-	text-shadow: 0 -1px rgba(0,0,0,.35);
-	line-height: 31px;
-	margin-bottom: 5px;
+	text-shadow: 0 -.1rem rgba(0,0,0,.35);
+	line-height: 3.1rem;
+	margin-bottom: .5rem;
 }
 
 #details .vcentercontainer:first-child {
@@ -274,9 +273,9 @@ nav li, footer li {
 }
 
 .verticalgallery  img {
-	border: solid 5px rgba(255,255,255,.22);
-	box-shadow: 0 0 45px rgba(0,0,0,.17);
-	margin: 30px auto;
+	border: solid .5rem rgba(255,255,255,.22);
+	box-shadow: 0 0 4.5rem rgba(0,0,0,.17);
+	margin: 3.0rem auto;
 }
 
 .detailstext {
