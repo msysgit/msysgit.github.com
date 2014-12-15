@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(grunt) {
 
 	grunt.initConfig({
@@ -5,9 +7,8 @@ module.exports = function(grunt) {
 		cssmin: {
 			compress: {
 				options: {
-					keepSpecialComments: 0,
-					report: 'min',
-					selectorsMergeMode: 'ie8'
+					compatibility: 'ie8',
+					keepSpecialComments: 0
 				},
 				files: {
 					'css/pack.css': [
@@ -22,10 +23,11 @@ module.exports = function(grunt) {
 
 		uglify: {
 			options: {
-				/*compress: true,*/
+				compress: {
+					warnings: false
+				},
 				mangle: true,
-				preserveComments: false,
-				report: 'min'
+				preserveComments: false
 			},
 			compress: {
 				files: {
@@ -42,7 +44,9 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					base: './',
+					hostname: 'localhost',
 					keepalive: true,
+					open: true,
 					port: 4000
 				}
 			}
