@@ -1,4 +1,4 @@
-[![devDependency Status](https://david-dm.org/msysgit/msysgit.github.com/dev-status.png)](https://david-dm.org/msysgit/msysgit.github.com#info=devDependencies)
+[![Dependency Status](https://david-dm.org/msysgit/msysgit.github.com.svg)](https://david-dm.org/msysgit/msysgit.github.com)
 
 The Git for Windows homepage
 
