@@ -21,7 +21,7 @@
 
 	.content {
 		width: 100%;
-		min-width: 700px;
+		min-width: 10px;
 		max-width: 700px;
 	}
 
@@ -68,10 +68,11 @@
 
 	.feature article {
 		height: 12em;
+		width: 60%;
 	}
 
 	.detailstext {
-		width: 58%;
+		width: 55%;
 	}
 
 	.detailsimg {
@@ -81,7 +82,7 @@
 
 @media screen and (max-width: 601px) {
 	.content {
-		min-width: 601px;
+		min-width: 10px;
 		max-width: 601px;
 	}
 
@@ -104,11 +105,21 @@
 	.detailsimg {
 		width: 35%;
 	}
+
+	div.version {
+		position: relative;
+		margin-top: 0;
+	}
+
+	nav ul {
+		float: none;
+		margin-top: 0;
+	}
 }
 
 @media screen and (max-width: 381px) {
 	.content {
-		min-width: 381px;
+		min-width: 10px;
 		max-width: 381px;
 	}
 
@@ -128,9 +139,6 @@
 		width: 30%;
 	}
 
-	nav ul {
-		float: none;
-	}
 	footer h2 {
 		display: none;
 	}
@@ -138,7 +146,7 @@
 
 @media screen and (max-width: 241px) {
 	.content {
-		min-width: 241px;
+		min-width: 10px;
 		max-width: 241px;
 	}
 
