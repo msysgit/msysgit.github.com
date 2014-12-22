@@ -28,7 +28,64 @@ var updateVersion = function(version, timestamp) {
 	});
 };
 
-if (process.argv.length != 4)
+var autoUpdate = function() {
+	Array.prototype.lastElement = function() {
+		return this[this.length - 1];
+	}
+
+	Array.prototype.filterRegex = function(regex) {
+		return this.map(function(value) {
+			var match = value.match(regex);
+			if (!match)
+				return undefined;
+			return match.lastElement();
+		}).filter(function (value) {
+			return value !== undefined;
+		});
+	};
+
+	var determineVersion = function(body) {
+		var tagNames = body.replace(/\n/gm, ',').split(',')
+			.filterRegex(/"tag_name": *"([^"]*)"/);
+		var regex = /^Git-\d+\.\d+\.\d+(\.\d+)?-preview(.*)/;
+		var timestamps = tagNames.filterRegex(regex).sort();
+		var latest = timestamps.lastElement();
+		regex = new RegExp('^Git-(.*)-preview' + latest);
+		var version = tagNames.filterRegex(regex)[0];
+		regex = new RegExp('^Git-' + version + '-preview');
+		var sameVersionCount = tagNames.filterRegex(regex).length;
+		if (sameVersionCount > 1)
+			version += ' Update ' + (sameVersionCount - 1);
+		process.stderr.write('Auto-detected version ' + version
+			+ ' (' + latest + ')\n');
+		return [ version, latest ];
+	};
+
+	var https = require('https');
+	https.body = '';
+	https.get({
+		'hostname': 'api.github.com',
+		'path': '/repos/msysgit/msysgit/releases',
+		'headers': {
+			'User-Agent': 'Git for Windows version updater'
+		}
+	}, function(res) {
+		if (res.statusCode != 200)
+			die(res);
+		res.on('data', function(data) {
+			https.body += data.toString();
+		});
+		res.on('end', function() {
+			var result = determineVersion(https.body);
+			updateVersion(result[0], result[1]);
+		});
+	});
+};
+
+if (process.argv.length == 3 && '--auto' == process.argv[2])
+	autoUpdate();
+else if (process.argv.length == 4)
+	updateVersion(process.argv[2], process.argv[3]);
+else
 	die('Usage: node ' + process.argv[1] + ' <version> <timestamp>\n');
 
-updateVersion(process.argv[2], process.argv[3]);
